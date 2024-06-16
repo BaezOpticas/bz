@@ -1,0 +1,148 @@
+/* Resetear márgenes y rellenos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.titulos{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Estilos para el menú */
+.menu {
+    background: rgb(157,110,92);
+    background: radial-gradient(circle, rgba(157,110,92,0.577468487394958) 52%, rgba(97,57,26,1) 100%);
+     display: flex; /* Establece el contenedor del menú como un flexbox */
+    justify-content: center;
+     align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px; /* Añade espacio interno al menú */
+}
+
+.menu ul {
+    list-style-type: none; /* Quita los puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Establece la lista como un flexbox */
+}
+
+.menu ul li {
+    margin-left: 150px; /* Añade espacio entre los elementos de la lista */
+}
+
+.menu ul li:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer elemento de la lista */
+}
+
+.menu ul li a {
+    text-decoration: none; /* Quita la subraya de los enlaces */
+    color: #fff; /* Color del texto */
+}
+
+.menu ul li a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotateY(260deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.logo {
+    max-width: 110px; /* Establece un ancho máximo para el logo */
+    max-height: 95px;
+    border-radius: 50%;
+    margin-right: 400px;
+    animation: spin 4s infinite linear; /* Aplica la animación de giro */
+}
+.carousel {
+    margin-top: 300px;
+    max-width: 800px; /* Establece el ancho máximo del carrusel */
+    margin: auto; /* Centra el carrusel horizontalmente */
+}
+.carousel-container {
+    margin-top: 20px;
+}
+.carousel-inner img {
+    max-height: 300px; /* Ajusta la altura máxima de las imágenes */
+    width: 100%; /* Ajusta el ancho de las imágenes para que ocupen todo el ancho del slider */
+    object-fit: cover; /* Ajusta el tamaño de las imágenes para que cubran el área del slider */
+}
+.map-container {
+    display: flex;
+    justify-content: right; /* Centra horizontalmente */
+    align-items: right; /* Centra verticalmente */
+    margin-top: 100px; /* Añade un margen superior adicional si es necesario */
+    margin-right: 50px;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .container {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.footer .text-muted {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.whatsapp-icon {
+    max-width: 50px; /* Ajusta el ancho máximo de la imagen */
+    max-height: 50px; /* Ajusta la altura máxima de la imagen */
+}
+.titulos{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu ul li {
+        margin-left: 10px; /* Reduce el espacio entre los elementos de la lista */
+    }
+    .logo {
+        margin-right: 10px; /* Reduce el margen derecho de la imagen del logo */
+    }
+    .map-container {
+        margin-top: 30px;
+        margin-right: 2px;
+    }
+    .col-md-4 p {
+        font-size: 14px; /* Ajusta el tamaño del texto en la columna de información */
+    }
+    .letra2{
+        font-size: 12px; /* Ajusta el tamaño del texto en la columna de información */
+
+    }
+    .imgtarge{
+
+        width: 150px;
+        height: 100px;
+    
+    }
+}
